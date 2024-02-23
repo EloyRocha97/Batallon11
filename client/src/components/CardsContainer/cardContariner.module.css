@@ -1,0 +1,11 @@
+.container {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Cambiado a column */
+  width: 35%; /* Ajusta el ancho como desees */
+  gap: 1em;
+  margin: 0 auto; /* Centra horizontalmente */
+}
