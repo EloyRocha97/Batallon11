@@ -3,7 +3,7 @@ const { Explorador } = require("../db");
 const { sequelize } = require("../db");
 
 const newExplorer = async (req, res) => {
-  const { dni, etapa } = req.body;
+  const { dni, etapa, nameTutor, contact } = req.body;
   try {
     const existingExplorer = await Explorador.findOne({ where: { dni } });
 
@@ -18,6 +18,8 @@ const newExplorer = async (req, res) => {
       const explorer = await Explorador.create({
         nameChildren: inscription.nameChildren,
         ageChildren: inscription.ageChildren,
+        nameTutor: inscription.nameTutor,
+        contact: inscription.contact,
         dni: inscription.dni,
         etapa: etapa || "?",
       });
@@ -33,6 +35,8 @@ const newExplorer = async (req, res) => {
       ageChildren: req.body.ageChildren,
       dni,
       etapa: etapa || "?",
+      nameTutor,
+      contact,
     });
 
     res

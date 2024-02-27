@@ -18,12 +18,20 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       dni: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.BIGINT,
         allowNull: false,
         unique: true,
       },
       etapa: {
         type: DataTypes.STRING,
+        allowNull: false,
+      },
+      nameTutor: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      contact: {
+        type: DataTypes.BIGINT,
         allowNull: false,
       },
     },

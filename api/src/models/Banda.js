@@ -22,7 +22,7 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       dni: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.BIGINT,
         allowNull: false,
       },
       schoolTime: {
@@ -43,7 +43,7 @@ module.exports = (sequelize) => {
       },
       expMusical: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
       },
       instrument: {
         type: DataTypes.ENUM(
@@ -56,7 +56,7 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       mobility: {
-        type: DataTypes.ENUM("Auto/moto", "Colectivo", "Caminando"),
+        type: DataTypes.ENUM("Auto/Moto", "Colectivo", "Caminando"),
         allowNull: false,
       },
       practice: {
@@ -68,11 +68,11 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       dniTutor: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.BIGINT,
         allowNull: false,
       },
       contact: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.BIGINT,
         allowNull: false,
       },
       gmail: {
