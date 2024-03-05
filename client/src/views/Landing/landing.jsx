@@ -71,10 +71,7 @@ const Inicio = () => {
           <a href="https://forms.gle/4uE4jaSe5oTspBZg7" className={style.link}>
             Pre-Inscripciones
           </a>
-          <a
-            href="https://drive.google.com/drive/folders/1JZPIIWZyK9-_nTSL7fK8CHGDzJH1S240"
-            className={style.link}
-          >
+          <a href="/salidas" className={style.link}>
             Nuestras Fotos
           </a>
         </div>

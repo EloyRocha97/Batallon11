@@ -1,6 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import axios from "axios";
-import { Banda, Fichas, Inicio } from "./views";
+import { Banda, Fichas, Inicio, Salidas } from "./views";
 import NavBar from "./components/NavBar/navBar";
 import style from "./app.module.css";
 axios.defaults.baseURL = "http://localhost:3001";
@@ -16,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/fichas" element={<Fichas />} />
+        <Route path="/salidas" element={<Salidas />} />
         <Route path="/banda" element={<Banda />} />
       </Routes>
     </div>
