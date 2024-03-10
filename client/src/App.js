@@ -11,7 +11,7 @@ function App() {
     location.pathname === "/" || location.pathname === "/banda";
 
   return (
-    <div className={style.back}>
+    <div className={style.body}>
       {!hideNavBar && <NavBar />}
       <Routes>
         <Route path="/" element={<Inicio />} />

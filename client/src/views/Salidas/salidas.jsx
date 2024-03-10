@@ -1,6 +1,10 @@
 import style from "./salidas.module.css";
 import { useState } from "react";
-import fondo from "./Fondo/4a05b176175fe8ace75e68262057ab25.jpg";
+import Paint from "./Fotos/PaintBall.jpeg";
+import Campa from "./Fotos/Campamento.jpg";
+import Banda from "./Fotos/Banda.png";
+import Desfile from "./Fotos/Desfile.jpg";
+import Sabado from "./Fotos/Sabados.jpg";
 
 const Salidas = () => {
   const [redirectTo, setRedirectTo] = useState("");
@@ -13,12 +17,9 @@ const Salidas = () => {
     <div className={style.container}>
       <div
         className={`${style.circle} ${style.topRight}`}
-        onClick={() => handleRedirect("")}
+        // onClick={() => handleRedirect("")}
       >
-        <img
-          src="https://img-9gag-fun.9cache.com/photo/aNgMzNG_460s.jpg"
-          alt="Desfile"
-        />
+        <img src={Desfile} alt="Desfile" />
         <p>Desfile</p>
       </div>
       <div
@@ -29,31 +30,19 @@ const Salidas = () => {
           )
         }
       >
-        <img
-          src="https://pbs.twimg.com/media/FaX-z0FWQAAgbTs.jpg:large"
-          alt="Campamento"
-        />
+        <img src={Campa} alt="Campamento" />
         <p>Campamento</p>
       </div>
       <div className={`${style.circle} ${style.center}`}>
-        <img
-          src="https://viapais.com.ar/resizer/zNjbzh8S_zhNK1aDAdIRKea9qRY=/1023x1023/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/SUY5E3ZBZJATNHKNKQRMZI3F2M.jpg"
-          alt="Sábado"
-        />
+        <img src={Sabado} alt="Sábado" />
         <p>Sábado</p>
       </div>
       <div className={`${style.circle} ${style.bottomRight}`}>
-        <img
-          src="https://p16-sg.tiktokcdn.com/aweme/720x720/tos-alisg-avt-0068/d5ef07a92606148a7b8027e9235a5f82.jpeg"
-          alt="Eventos"
-        />
-        <p>Eventos</p>
+        <img src={Banda} alt="Eventos" />
+        <p>Banda</p>
       </div>
       <div className={`${style.circle} ${style.bottomLeft}`}>
-        <img
-          src="https://i0.wp.com/panoramadirecto.com/wp-content/uploads/2020/01/Mia.jpg?fit=597%2C585&ssl=1"
-          alt="Salidas"
-        />
+        <img src={Paint} alt="Salidas" />
         <p>Salidas</p>
       </div>
     </div>

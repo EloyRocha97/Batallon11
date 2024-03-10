@@ -46,13 +46,13 @@
 
 .topRight {
   position: absolute;
-  top: 30px; /* Ajuste para bajar el círculo superior derecho */
+  top: 30px;
   right: 8%;
 }
 
 .topLeft {
   position: absolute;
-  top: 30px; /* Ajuste para bajar el círculo superior izquierdo */
+  top: 30px;
   left: 8%;
 }
 

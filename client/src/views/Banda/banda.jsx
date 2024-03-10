@@ -47,6 +47,9 @@ const Banda = () => {
         <a href="https://forms.gle/Y3r6F3pAbE6dvMmk9" className={style.link}>
           Inscripciones
         </a>
+        {/* <a href="https://forms.gle/Y3r6F3pAbE6dvMmk9" className={style.link}>
+          Momentos
+        </a> */}
       </div>
       <div className={style.redes}>
         <div>

@@ -1,10 +1,11 @@
 .navBar {
-  background-color: rgba(0, 0, 255, 0.055);
+  max-width: 40%;
+  /* background-color: rgba(0, 0, 255, 0.055); */
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  border: 1px solid rgba(0, 0, 255, 0.144);
-  border-radius: 10px;
+  justify-content: space-around;
+  /* border: 1px solid rgba(0, 0, 255, 0.144); */
+  /* border-radius: 10px; */
+  margin: 0 auto;
 }
 
 .link {
@@ -23,5 +24,5 @@
 }
 
 .link:hover {
-  background-color: #80ffff83; /* Cambia el color al hacer hover */
+  background-color: #80ffff83;
 }
