@@ -25,9 +25,9 @@ const NavBar = () => {
       <Link to="/banda" className={style.link} onClick={handleClick}>
         Banda
       </Link>
-      <Link className={style.link} onClick={handleClick}>
+      {/* <Link className={style.link} onClick={handleClick}>
         Ficha Medica
-      </Link>
+      </Link> */}
     </div>
   );
 };
