@@ -44,7 +44,12 @@ const Banda = () => {
           TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
         </p>
 
-        <a href="https://forms.gle/Y3r6F3pAbE6dvMmk9" className={style.link}>
+        <a
+          href="https://forms.gle/Y3r6F3pAbE6dvMmk9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={style.link}
+        >
           Inscripciones
         </a>
         {/* <a href="https://forms.gle/Y3r6F3pAbE6dvMmk9" className={style.link}>
