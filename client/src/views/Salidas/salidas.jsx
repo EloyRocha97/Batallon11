@@ -7,7 +7,7 @@ import Desfile from "./Fotos/Desfile.jpg";
 import Sabado from "./Fotos/Sabados.jpg";
 
 const Salidas = () => {
-  const [redirectTo, setRedirectTo] = useState("");
+  // const [redirectTo, setRedirectTo] = useState("");
 
   const handleRedirect = (url) => {
     window.location.href = url;
