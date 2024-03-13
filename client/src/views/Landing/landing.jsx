@@ -8,24 +8,25 @@ import Yt from "./svg/youtube-color.svg";
 import Face from "./svg/facebook-color.svg";
 import style from "./landing.module.css";
 import Contacto from "../Contacto/contacto";
-import Button from "@mui/material/Button";
 
 const Inicio = () => {
   return (
     <div>
       <div className={style.presentacion}>
-        <div className={style.overlay}>
-          <div className={style.logoContainer}>
-            <img src={Logo} className={style.imageLogo} alt="Logo" />
-          </div>
-          <div className={`${style.logoContainer} ${style.overlay2}`}>
-            <img src={db} className={style.imageLogoDb} alt="Logo" />
-          </div>
-          <div className={`${style.logoContainer} ${style.overlay3}`}>
-            <img src={LogoExp} className={style.imageLogo2} alt="Logo" />
+        <div className={style.logoWrapper}>
+          <img src={Bata} className={style.imageBata} alt="bata11" />
+          <div className={style.overlay}>
+            <div className={style.logoContainer}>
+              <img src={Logo} className={style.imageLogo} alt="Logo" />
+            </div>
+            <div className={style.logoContainerDb}>
+              <img src={db} className={style.imageLogoDb} alt="Logo" />
+            </div>
+            <div className={style.logoContainer}>
+              <img src={LogoExp} className={style.imageLogo2} alt="Logo" />
+            </div>
           </div>
         </div>
-        <img src={Bata} className={style.imageBata} alt="bata11" />
       </div>
       <NavBar />
       <div className={style.homeText}>

@@ -1,47 +1,79 @@
 .overlay {
-  margin-top: 1%;
-  margin-left: 1%;
   position: absolute;
-  z-index: 1;
-  display: flex; /* Hace que los elementos dentro del overlay se organicen en una fila */
-}
-.overlay2 {
-  margin-top: 120%;
-  position: absolute;
-  margin-left: 300%;
-  z-index: 1;
   display: flex;
-  opacity: 0.7;
-}
-.overlay3 {
-  margin-top: 1%;
-  position: absolute;
-  margin-left: 615%;
-  z-index: 1;
-  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.logoContainer,
-.titleContainer {
-  display: flex; /* Organiza los elementos internos en una fila */
-  align-items: center; /* Centra verticalmente los elementos internos */
-  padding-left: 10vh;
-  margin-right: -2vh;
-  /* margin-left: 0vh; */
+.overlay > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20%;
+}
+
+.logoContainer:nth-child(1) {
+  margin-right: 20%; /* Ajusta el margen derecho del logo para separarlo un poco */
+}
+
+.logoContainer:nth-child(3) {
+  margin-left: 20%; /* Ajusta el margen izquierdo del logoExp para separarlo un poco */
+}
+
+.logoContainerDb {
+  display: flex;
+  align-items: center;
+  margin-top: 17%; /* Ajusta el margen superior según sea necesario */
+}
+
+.logoWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageBata {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .imageLogo {
-  /* border-radius: 67px;
-  border: 2px solid black; */
   height: 20vh;
 }
+
 .imageLogo2 {
-  /* border-radius: 67px;
-  border: 2px solid black; */
   height: 20vh;
 }
+
 .imageLogoDb {
   height: 40vh;
+  opacity: 0.8;
+}
+
+.presentacion {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+  border-left: 2px solid rgb(82, 84, 221);
+  border-bottom: 3px solid rgb(82, 84, 221);
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+  margin-bottom: 3%;
 }
 
 .titulo {
@@ -53,16 +85,25 @@
   position: relative;
   height: 70vh;
   overflow: hidden;
+  border-left: 2px solid rgb(82, 84, 221);
   border-bottom: 3px solid rgb(82, 84, 221);
   border-bottom-left-radius: 2%;
   border-bottom-right-radius: 2%;
   margin-bottom: 3%;
 }
 
+.logoWrapper {
+  position: relative;
+  width: 100%; /* Ajusta el ancho al tamaño del contenedor */
+  height: 100%; /* Ajusta el alto al tamaño del contenedor */
+}
+
 .imageBata {
+  margin-top: 0 auto;
   width: 100%;
   height: auto;
   position: absolute;
+  margin-top: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centrar la imagen */
