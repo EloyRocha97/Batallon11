@@ -18,9 +18,6 @@ const Inicio = () => {
           <div className={style.logoContainer}>
             <img src={Logo} className={style.imageLogo} alt="Logo" />
           </div>
-          {/* <div className={style.titleContainer}>
-            <h1 className={style.titulo}>Batallon 11 Gral. Jose Maria Paz</h1>
-          </div> */}
           <div className={`${style.logoContainer} ${style.overlay2}`}>
             <img src={db} className={style.imageLogoDb} alt="Logo" />
           </div>
