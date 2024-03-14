@@ -1,190 +1,190 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .overlay {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .overlay > div {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .logoContainer {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20%;
 }
 
 .logoContainer:nth-child(1) {
-  margin-right: 20%; /* Ajusta el margen derecho del logo para separarlo un poco */
+    margin-right: 20%; /* Ajusta el margen derecho del logo para separarlo un poco */
 }
 
 .logoContainer:nth-child(3) {
-  margin-left: 20%; /* Ajusta el margen izquierdo del logoExp para separarlo un poco */
+    margin-left: 20%; /* Ajusta el margen izquierdo del logoExp para separarlo un poco */
 }
 
 .logoContainerDb {
-  display: flex;
-  align-items: center;
-  margin-top: 17%; /* Ajusta el margen superior según sea necesario */
+    display: flex;
+    align-items: center;
+    margin-top: 17%; /* Ajusta el margen superior según sea necesario */
 }
 
 .logoWrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imageBata {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .imageLogo {
-  height: 20vh;
+    height: 20vh;
 }
 
 .imageLogo2 {
-  height: 20vh;
+    height: 20vh;
 }
 
 .imageLogoDb {
-  height: 40vh;
-  opacity: 0.8;
-}
-
-.presentacion {
-  position: relative;
-  height: 70vh;
-  overflow: hidden;
-  border-left: 2px solid rgb(82, 84, 221);
-  border-bottom: 3px solid rgb(82, 84, 221);
-  border-bottom-left-radius: 2%;
-  border-bottom-right-radius: 2%;
-  margin-bottom: 3%;
+    height: 40vh;
+    opacity: 0.8;
 }
 
 .titulo {
-  color: white;
-  margin: 0;
+    color: white;
+    margin: 0;
 }
 
 .presentacion {
-  position: relative;
-  height: 70vh;
-  overflow: hidden;
-  border-left: 2px solid rgb(82, 84, 221);
-  border-bottom: 3px solid rgb(82, 84, 221);
-  border-bottom-left-radius: 2%;
-  border-bottom-right-radius: 2%;
-  margin-bottom: 3%;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    /* border-left: 2px solid rgb(82, 84, 221); */
+    box-shadow: 0px 5px 5px 2px rgba(82, 84, 221, 0.506);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 3%;
+    background-image: url("./LandingFotos/Todoss.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px -90px;
 }
 
 .logoWrapper {
-  position: relative;
-  width: 100%; /* Ajusta el ancho al tamaño del contenedor */
-  height: 100%; /* Ajusta el alto al tamaño del contenedor */
+    position: relative;
+    width: 100%; /* Ajusta el ancho al tamaño del contenedor */
+    height: 100%; /* Ajusta el alto al tamaño del contenedor */
 }
 
 .imageBata {
-  margin-top: 0 auto;
-  width: 100%;
-  height: auto;
-  position: absolute;
-  margin-top: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centrar la imagen */
+    margin-top: 0 auto;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar la imagen */
 }
 
 .homeText {
-  margin-top: 4%;
-  padding-left: 25%;
-  padding-right: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    /* margin-top: 4%; */
+    padding: 6px 2rem 6px 2rem;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 2rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
-.parrafo11 {
-  color: #636363;
-  flex-wrap: nowrap;
-  padding-bottom: 8%;
-}
-.parrafo111 {
-  color: #636363;
-  flex-wrap: nowrap;
-  padding-bottom: 1%;
+.text {
+    color: rgba(0, 20, 78, 0.81);
 }
 
-.items {
-  color: #777777;
+.titles {
+    color: rgb(0, 19, 78);
 }
 
 .final {
-  display: flex;
-  justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
-  align-items: center;
-  padding: 8%;
-  padding-top: 3%;
-  padding-bottom: 3%;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+    align-items: center;
+    padding: 8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px; /* Agrega un espacio entre los botones */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px; /* Agrega un espacio entre los botones */
 }
 
 .buttons > .preinscripcionesButton,
 .buttons > .fotosButton {
-  width: 200px;
+    width: 200px;
 }
 
 .link {
-  margin-left: 20%;
-  display: inline-block;
-  padding: 10px 16px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 255, 0.342);
-  text-decoration: none;
-  color: #000000d3;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 15px;
-  font-weight: 900;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    margin-left: 20%;
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0.342);
+    text-decoration: none;
+    color: #000000d3;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .link:hover {
-  background-color: #80ffff83; /* Cambia el color al hacer hover */
+    background-color: #80ffff83; /* Cambia el color al hacer hover */
 }
 
 .redesIcon {
-  display: flex;
-  align-items: center; /* Para centrar verticalmente */
-  gap: 15px;
+    display: flex;
+    align-items: center; /* Para centrar verticalmente */
+    gap: 15px;
 }
 
 .redesIconTam {
-  width: 30px;
-  cursor: pointer;
+    width: 30px;
+    cursor: pointer;
 }
 
 .redes {
-  display: flex;
-  flex-direction: column; /* Para apilar el contenido uno encima del otro */
-  align-items: center; /* Para centrar horizontalmente */
-  justify-content: center; /* Para centrar verticalmente */
+    display: flex;
+    flex-direction: column; /* Para apilar el contenido uno encima del otro */
+    align-items: center; /* Para centrar horizontalmente */
+    justify-content: center; /* Para centrar verticalmente */
 }
