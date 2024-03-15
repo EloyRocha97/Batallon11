@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* overflow-x: hidden; */
 }
 .overlay {
     position: absolute;
@@ -118,73 +119,74 @@
     padding: 6px 2rem 6px 2rem;
     background-color: white;
     border-radius: 15px;
-    margin-top: 2rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+    position: relative;
 }
 
 .text {
-    color: rgba(0, 20, 78, 0.81);
+    color: rgb(0, 22, 89);
+    z-index: 1;
+    font-size: 20px;
 }
 
+.title {
+    color: rgb(0, 19, 78);
+    font-size: 40px;
+}
 .titles {
     color: rgb(0, 19, 78);
+    z-index: 1;
+    font-size: 25px;
+}
+
+.logo11 {
+    width: 35%;
+    position: absolute;
+    /* z-index: -1; */
+    opacity: 0.2;
 }
 
 .final {
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+    justify-content: space-between;
     align-items: center;
     padding: 8%;
-    padding-top: 3%;
-    padding-bottom: 3%;
 }
 
 .buttons {
+    width: 60%;
+    margin-top: 60px;
+    /* margin: 40px; */
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px; /* Agrega un espacio entre los botones */
-}
-
-.buttons > .preinscripcionesButton,
-.buttons > .fotosButton {
-    width: 200px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .link {
-    margin-left: 20%;
-    display: inline-block;
-    padding: 10px 16px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 8px 16px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 255, 0.342);
+    background-color: rgb(0, 19, 78);
     text-decoration: none;
-    color: #000000d3;
+    color: white;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    font-weight: 900;
+    font-size: 20px;
+    font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .link:hover {
-    background-color: #80ffff83; /* Cambia el color al hacer hover */
+    background-color: rgba(0, 20, 78, 0.764);
 }
 
 .redesIcon {
     display: flex;
     align-items: center; /* Para centrar verticalmente */
     gap: 15px;
-}
-
-.redesIconTam {
-    width: 30px;
-    cursor: pointer;
-}
-
-.redes {
-    display: flex;
-    flex-direction: column; /* Para apilar el contenido uno encima del otro */
-    align-items: center; /* Para centrar horizontalmente */
-    justify-content: center; /* Para centrar verticalmente */
 }

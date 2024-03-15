@@ -1,91 +1,62 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.mapContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
 }
 
 .map {
-  width: 500px;
-  height: 250px;
+    width: 500px;
+    height: 250px;
 }
 
 .contacto {
-  font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .medios {
-  font-family: "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .icons {
-  width: 20px;
-  padding: 5px;
+    width: 20px;
+    padding: 5px;
 }
 
 .info {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .fakes {
-  display: flex;
-  justify-content: flex-start;
-  gap: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
+.ubicacion {
+    padding: 0;
+    margin: 0;
+    color: rgb(243, 250, 255);
+}
 .items1 {
-  color: #363434;
+    color: rgb(243, 250, 255);
 }
 .items2 {
-  color: #424141;
+    color: rgb(243, 250, 255);
 }
 
-@media screen and (max-width: 800px) {
-  .map {
-    width: 400px;
-    height: 150px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .map {
-    width: 300px;
-    height: 150px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .map {
-    width: 300px;
-    height: 150px;
-  }
-
-  .fakes {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .contacto {
-    font-size: 20px;
-    font-family: "Times New Roman", Times, serif;
-  }
-
-  .map {
-    width: 250px;
-    height: 150px;
-  }
-
-  .fakes {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    flex-direction: column;
-  }
+.media {
+    color: rgb(243, 250, 255);
+    font-size: 2.5rem;
 }

@@ -6,87 +6,91 @@ import Ig from "../Landing/svg/instagram-color.svg";
 import Yt from "../Landing/svg/youtube-color.svg";
 import Face from "../Landing/svg/facebook-color.svg";
 import style from "./banda.module.css";
+import BandaNavBar from "../../components/NavBar/bandaNavBar";
+import Footer from "../../components/Footer/footer";
 
 const Banda = () => {
-  return (
-    <div>
-      <div className={style.overlay}>
-        <div className={`${style.logoContainer} ${style.left}`}>
-          <img src={Logo} className={style.imageLogo} alt="Logo" />
+    return (
+        <div className={style.banda}>
+            <BandaNavBar />
+            <div className={style.bandaText}>
+                <img
+                    src={BandaLogo}
+                    alt="logo_banda"
+                    className={style.logoBanda}
+                />
+                <div>
+                    <h2 className={style.titles}>Nuestra Historia</h2>
+                    <p className={style.text}>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Et numquam omnis harum accusantium, delectus
+                        voluptates sit voluptate illo reprehenderit consequatur,
+                        molestias doloribus beatae dolor eum est voluptas iste
+                        earum distinctio. Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Quibusdam commodi aperiam
+                        corporis at asperiores nemo esse, quia aspernatur rem.
+                        Perferendis illum a quis quidem numquam dolore, sint
+                        suscipit culpa asperiores! Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Consequuntur nihil vitae
+                        velit harum, in temporibus eveniet obcaecati laboriosam
+                        sit accusantium dolores quis amet, mollitia iusto
+                        consectetur! Incidunt autem vero pariatur?Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Odit, iusto
+                        beatae dolor et voluptatum, nemo asperiores accusamus,
+                        provident commodi aperiam quibusdam! Cum iure
+                        exercitationem vero doloribus qui, error odit! Aperiam!
+                    </p>
+                    <p className={style.text}>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Et numquam omnis harum accusantium, delectus
+                        voluptates sit voluptate illo reprehenderit consequatur,
+                        molestias doloribus beatae dolor eum est voluptas iste
+                        earum distinctio. Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Quibusdam commodi aperiam
+                        corporis at asperiores nemo esse, quia aspernatur rem.
+                        Perferendis illum a quis quidem numquam dolore, sint
+                        suscipit culpa asperiores! Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Consequuntur nihil vitae
+                        velit harum, in temporibus eveniet obcaecati laboriosam
+                        sit accusantium dolores quis amet, mollitia iusto
+                        consectetur! Incidunt autem vero pariatur?Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Odit, iusto
+                        beatae dolor et voluptatum, nemo asperiores accusamus,
+                        provident commodi aperiam quibusdam! Cum iure
+                        exercitationem vero doloribus qui, error odit! Aperiam!
+                    </p>
+                    <p className={style.text}>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Et numquam omnis harum accusantium, delectus
+                        voluptates sit voluptate illo reprehenderit consequatur,
+                        molestias doloribus beatae dolor eum est voluptas iste
+                        earum distinctio. Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Quibusdam commodi aperiam
+                        corporis at asperiores nemo esse, quia aspernatur rem.
+                        Perferendis illum a quis quidem numquam dolore, sint
+                        suscipit culpa asperiores! Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Consequuntur nihil vitae
+                        velit harum, in temporibus eveniet obcaecati laboriosam
+                        sit accusantium dolores quis amet, mollitia iusto
+                        consectetur! Incidunt autem vero pariatur?Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Odit, iusto
+                        beatae dolor et voluptatum, nemo asperiores accusamus,
+                        provident commodi aperiam quibusdam! Cum iure
+                        exercitationem vero doloribus qui, error odit! Aperiam!
+                    </p>
+                </div>
+            </div>
+            <a
+                href="https://forms.gle/Y3r6F3pAbE6dvMmk9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={style.link}
+            >
+                Inscripciones
+            </a>
+            <Footer />
         </div>
-        <div className={style.titleContainer}>
-          <h1 className={style.titulo}>Batallon 11 Gral. Jose Maria Paz</h1>
-        </div>
-        <div className={`${style.logoContainer2} ${style.right}`}>
-          <img src={BandaLogo} className={style.imageLogo} alt="BandaLogo" />
-        </div>
-      </div>
-      <div className={style.nav}>
-        <NavBar />
-      </div>
-
-      <div className={style.all}>
-        <img src={BandaM} className={style.imageBanda1} alt="BandaM" />
-        <h2 className={style.items}>Nuestra Historia</h2>
-        <p className={style.parrafoBanda}>
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoText
-          oTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-        </p>
-
-        <a
-          href="https://forms.gle/Y3r6F3pAbE6dvMmk9"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={style.link}
-        >
-          Inscripciones
-        </a>
-        {/* <a href="https://forms.gle/Y3r6F3pAbE6dvMmk9" className={style.link}>
-          Momentos
-        </a> */}
-      </div>
-      <div className={style.redes}>
-        <div>
-          <p>No te olvides de visitarnos por nuestras redes</p>
-        </div>
-        <div className={style.redesIcon}>
-          <a
-            href="https://www.instagram.com/batallon11/?hl=es"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Ig} alt="Mi ig" className={style.redesIconTam} />
-          </a>
-
-          <a
-            href="https://www.facebook.com/Batallon11Cordoba/?locale=es_LA"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Face} alt="Mi face" className={style.redesIconTam} />
-          </a>
-          <a
-            href="https://www.youtube.com/user/Batallon11Cba"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Yt} alt="Mi Yt" className={style.redesIconTam} />
-          </a>
-        </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Banda;
