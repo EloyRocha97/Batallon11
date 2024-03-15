@@ -14,6 +14,12 @@ const NavBar = () => {
 
     return (
         <div className={style.navBar}>
+            <div className={style.container}>
+                <div className={style.batallon}>
+                    <h1>Batallón 11</h1>
+                    <h1>Gral. José María Paz</h1>
+                </div>
+            </div>
             <div className={style.links}>
                 <Link to="/" className={style.link} onClick={handleClick}>
                     Inicio
