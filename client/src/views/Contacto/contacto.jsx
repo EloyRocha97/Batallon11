@@ -11,10 +11,10 @@ const Contacto = () => {
                     <PlaceIcon
                         sx={{
                             color: "rgb(243, 250, 255)",
-                            fontSize: "2.5rem",
+                            fontSize: "clamp(0.5rem, 10vw, 2.5rem)",
                         }}
                     />
-                    <h3 className={style.items2}>
+                    <h3 className={style.location}>
                         Av. Colón 6500, Don Bosco,<br></br> X5003DFW, 5000
                         Córdoba
                     </h3>

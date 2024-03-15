@@ -5,12 +5,16 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Contacto from "../../views/Contacto/contacto";
 import style from "./footer.module.css";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Footer = () => {
+    const isTablet = useMediaQuery("(min-width:550px)");
+    const isLaptop = useMediaQuery("(min-width:1366px)");
+
     return (
         <div className={style.footer}>
             <div className={style.container}>
-                <section>
+                <section className={style.mapContainer}>
                     <Contacto />
                 </section>
                 <section className={style.redes}>
@@ -19,25 +23,43 @@ const Footer = () => {
                         <InstagramIcon
                             sx={{
                                 color: "rgb(243, 250, 255)",
-                                fontSize: "3.5rem",
+                                fontSize: "clamp(12px, 10vw, 3.5rem)",
+
+                                // ...(isTablet && { fontSize: "2.5rem" }),
+
+                                // ...(isLaptop && {
+                                //     fontSize: "clamp(12px, 4vw, 32px)",
+                                // }),
                             }}
                         />
                         <FacebookIcon
                             sx={{
                                 color: "rgb(243, 250, 255)",
-                                fontSize: "3.5rem",
+                                fontSize: "clamp(12px, 10vw, 3.5rem)",
+
+                                // ...(isTablet && { fontSize: "2.5rem" }),
+
+                                // ...(isLaptop && { fontSize: "3.5rem" }),
                             }}
                         />
                         <YouTubeIcon
                             sx={{
                                 color: "rgb(243, 250, 255)",
-                                fontSize: "3.5rem",
+                                fontSize: "clamp(12px, 10vw, 3.5rem)",
+
+                                // ...(isTablet && { fontSize: "2.5rem" }),
+
+                                // ...(isLaptop && { fontSize: "3.5rem" }),
                             }}
                         />
                         <WhatsAppIcon
                             sx={{
                                 color: "rgb(243, 250, 255)",
-                                fontSize: "3.5rem",
+                                fontSize: "clamp(12px, 10vw, 3.5rem)",
+
+                                // ...(isTablet && { fontSize: "2.5rem" }),
+
+                                // ...(isLaptop && { fontSize: "3.5rem" }),
                             }}
                         />
                     </div>

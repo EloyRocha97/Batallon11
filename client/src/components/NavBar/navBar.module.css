@@ -14,11 +14,13 @@
 
 .links {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: start;
-    width: 40%;
+    width: 50%;
     position: sticky;
     top: 2rem;
+    padding-right: 2rem;
+    gap: 10px;
 }
 
 .logos {
@@ -29,22 +31,19 @@
     padding: 2rem;
 }
 
-.logo11 {
-    width: 100px;
-}
-.logoExp {
-    width: 100px;
-}
-
 .link {
-    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 0.5rem;
     border-radius: 10px;
     background-color: rgb(0, 19, 78);
     text-decoration: none;
     color: white;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    font-size: clamp(10px, 1vw, 15px);
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;

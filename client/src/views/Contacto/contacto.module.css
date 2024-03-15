@@ -3,9 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    width: 100%;
 }
 
 .mapContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,8 +15,10 @@
 }
 
 .map {
-    width: 500px;
-    height: 250px;
+    width: 80%;
+    height: 350px;
+    border: none;
+    border-radius: 10px;
 }
 
 .contacto {
@@ -52,11 +56,39 @@
 .items1 {
     color: rgb(243, 250, 255);
 }
-.items2 {
+.location {
     color: rgb(243, 250, 255);
+    font-size: clamp(15px, 4vw, 1rem);
 }
 
 .media {
     color: rgb(243, 250, 255);
     font-size: 2.5rem;
+}
+
+@media screen and (max-width: 880px) {
+    .mapContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .map {
+        width: 100%;
+        height: 350px;
+        border: none;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mapContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
 }
