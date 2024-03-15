@@ -2,33 +2,36 @@ const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {
   sequelize.define(
-    "Explorador",
+    "FichaMedica",
     {
       id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
       },
-      nameChildren: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      ageChildren: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-      },
       dni: {
         type: DataTypes.BIGINT,
         allowNull: false,
-        unique: true,
+      },
+      image: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      nameChildren: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      ageChildren: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
       },
       etapa: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
       },
       nameTutor: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
       },
       dniTutor: {
         type: DataTypes.BIGINT,
@@ -36,11 +39,11 @@ module.exports = (sequelize) => {
       },
       contact: {
         type: DataTypes.BIGINT,
-        allowNull: false,
+        allowNull: true,
       },
-      image: {
+      gmail: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
       },
     },
     {

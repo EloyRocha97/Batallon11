@@ -1,43 +1,45 @@
 const { Inscription } = require("../db");
+const { FichaMedica } = require("../db");
 const { Explorador } = require("../db");
 const { sequelize } = require("../db");
 
 const newExplorer = async (req, res) => {
-  const { dni, etapa } = req.body;
+  const { dni } = req.body; // Obtener el DNI del cuerpo de la solicitud
   try {
-    const existingExplorer = await Explorador.findOne({ where: { dni } });
-
-    if (existingExplorer) {
-      return res.status(400).json({ message: "El explorador ya existe" });
-    }
-
-    const inscription = await Inscription.findOne({ where: { dni } });
-
-    if (inscription) {
-      // Si se encuentra una inscripción...
-      const explorer = await Explorador.create({
-        nameChildren: inscription.nameChildren,
-        ageChildren: inscription.ageChildren,
-        dni: inscription.dni,
-        etapa: etapa || "?",
-      });
-
-      return res
-        .status(201)
-        .json({ message: "Explorador creado exitosamente", explorer });
-    }
-
-    // Si no se encuentra una inscripción...
-    const explorer = await Explorador.create({
-      nameChildren: req.body.nameChildren,
-      ageChildren: req.body.ageChildren,
-      dni,
-      etapa: etapa || "?",
+    // Buscar en FichaMedica por el DNI e incluir la imagen
+    const fichaMedica = await FichaMedica.findOne({
+      where: { dni },
     });
 
-    res
-      .status(201)
-      .json({ message: "Explorador creado exitosamente", explorer });
+    // Buscar en Inscription por el DNI
+    const inscription = await Inscription.findOne({ where: { dni } });
+
+    if (fichaMedica && inscription) {
+      // Si existen registros en ambos modelos con el mismo DNI, unificar los datos para crear el explorador
+      const explorerData = {
+        dni: inscription.dni,
+        nameChildren: inscription.nameChildren,
+        ageChildren: inscription.ageChildren,
+        etapa: inscription.etapa,
+        nameTutor: inscription.nameTutor,
+        dniTutor: inscription.dniTutor,
+        contact: inscription.contact,
+        gmail: inscription.gmail,
+        image: fichaMedica.image,
+      };
+
+      const explorer = await Explorador.create(explorerData);
+
+      res
+        .status(201)
+        .json({ message: "Explorador creado exitosamente", explorer });
+    } else {
+      // Si no se encuentra un registro en uno de los modelos, devolver un mensaje de error
+      res.status(404).json({
+        message:
+          "No se encontró ningún registro con el DNI proporcionado en ambos modelos",
+      });
+    }
   } catch (error) {
     console.error("Error al crear el explorador:", error);
     res.status(500).json({ message: "Error al procesar la solicitud" });
@@ -68,7 +70,16 @@ const getExplorador = async (req, res) => {
 
 const editExplorador = async (req, res) => {
   const { id } = req.params;
-  const { nameChildren, ageChildren, dni, etapa } = req.body;
+  const {
+    nameChildren,
+    ageChildren,
+    dni,
+    etapa,
+    nameTutor,
+    dniTutor,
+    contact,
+    image,
+  } = req.body;
 
   try {
     const explorer = await Explorador.findByPk(id);
@@ -89,6 +100,18 @@ const editExplorador = async (req, res) => {
     if (etapa) {
       explorer.etapa = etapa;
     }
+    if (nameTutor) {
+      explorer.nameTutor = nameTutor;
+    }
+    if (dniTutor) {
+      explorer.dniTutor = dniTutor;
+    }
+    if (contact) {
+      explorer.contact = contact;
+    }
+    if (image) {
+      explorer.image = image;
+    }
 
     await explorer.save();
 
@@ -101,4 +124,19 @@ const editExplorador = async (req, res) => {
   }
 };
 
-module.exports = { newExplorer, getExplorador, editExplorador };
+const deleteExplorador = async (req, res) => {
+  const { id } = req.params;
+  try {
+    await Explorador.destroy({ where: { id: id } });
+    res.status(200).json({ message: "Explorador eliminado" });
+  } catch (error) {
+    res.status(404).json({ message: "No se pudo realizar la operacion" });
+  }
+};
+
+module.exports = {
+  newExplorer,
+  getExplorador,
+  editExplorador,
+  deleteExplorador,
+};

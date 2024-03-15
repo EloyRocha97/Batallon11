@@ -36,7 +36,8 @@ let capsEntries = entries.map((entry) => [
 sequelize.models = Object.fromEntries(capsEntries);
 //**
 
-const { User, Publications, Inscription, Explorador, Banda } = sequelize.models;
+const { User, Publications, Inscription, Explorador, Banda, FichaMedica } =
+  sequelize.models;
 
 Publications.belongsTo(User, { foreignKey: "userId" });
 

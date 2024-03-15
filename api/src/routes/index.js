@@ -5,6 +5,7 @@ const publicationsRouter = require("./publications.routes");
 const inscriptRouter = require("./inscription.routes");
 const exploradorRouter = require("./explorador.routes");
 const bandaRouter = require("./banda.routes");
+const fichaRouter = require("./fichaMedica.routes");
 
 const mainRouter = Router();
 
@@ -14,5 +15,6 @@ mainRouter.use("/publications", publicationsRouter);
 mainRouter.use("/inscription", inscriptRouter);
 mainRouter.use("/explorador", exploradorRouter);
 mainRouter.use("/banda", bandaRouter);
+mainRouter.use("/ficha", fichaRouter);
 
 module.exports = mainRouter;

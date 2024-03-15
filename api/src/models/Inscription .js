@@ -18,7 +18,11 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       dni: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.BIGINT,
+        allowNull: false,
+      },
+      etapa: {
+        type: DataTypes.STRING,
         allowNull: false,
       },
       nameTutor: {
@@ -26,16 +30,16 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       dniTutor: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.BIGINT,
         allowNull: false,
       },
       contact: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.BIGINT,
         allowNull: false,
       },
       gmail: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
       },
     },
     {

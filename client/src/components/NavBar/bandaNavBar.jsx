@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import style from "./navBar.module.css";
+import style from "./bandaNavBar.module.css";
 import Bata from "../../views/Landing/LandingFotos/bata11.png";
 import LogoExp from "../../views/Landing/LandingFotos/LogoExp.png";
 
-const NavBar = () => {
+const BandaNavBar = () => {
     const handleClick = () => {
         window.scrollTo({
             top: 0,
@@ -33,4 +33,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default BandaNavBar;

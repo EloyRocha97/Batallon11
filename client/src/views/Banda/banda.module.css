@@ -1,114 +1,146 @@
+.banda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.bandaText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    /* margin-top: 4%; */
+    padding: 6px 2rem 6px 2rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+    position: relative;
+}
+
+.logoBanda {
+    width: 35%;
+    position: absolute;
+    /* z-index: -1; */
+    opacity: 0.2;
+}
+
+.titles {
+    color: rgb(0, 19, 78);
+    z-index: 1;
+    font-size: 25px;
+}
+
+.text {
+    color: rgb(0, 22, 89);
+    z-index: 1;
+    font-size: 20px;
+}
+
 .all {
-  padding: 2% 10% 2% 10%;
+    margin: 0 auto;
+    width: 80%; /* Ancho del contenido */
+    text-align: center; /* Centrar el texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
 }
 
 .overlay {
-  margin-top: 1%;
-  position: relative;
-  display: flex;
-  justify-content: space-between; /* Alinea los elementos a los extremos */
-  align-items: center; /* Centra verticalmente los elementos */
-  margin-bottom: 1%;
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-bottom: 1%;
 }
 
 .logoContainer,
 .logoContainer2 {
-  display: flex;
-  align-items: center;
-  margin: 0 8%; /* Ajusta el margen horizontal para acercar los logos al centro */
+    display: flex;
+    align-items: center;
+    margin: 0 8%; /* Ajusta el margen horizontal para acercar los logos al centro */
 }
 
 .logoContainer.left {
-  margin-right: auto; /* Empuja a la izquierda */
+    margin-right: auto; /* Empuja a la izquierda */
 }
 
 .logoContainer2.right {
-  margin-left: auto; /* Empuja a la derecha */
+    margin-left: auto; /* Empuja a la derecha */
 }
 
 .imageLogo {
-  height: 170px;
+    height: 170px;
 }
 
 .titulo {
-  color: black;
-  margin: 0;
+    color: black;
+    margin: 0;
 }
 
 .NavBar {
-  z-index: 0;
+    z-index: 0;
 }
 
 .nav {
-  margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 80px;
 }
 
 .imageBanda1 {
-  margin-left: 15px;
-  padding: 1%;
-  width: 52%;
-  border-radius: 40px;
-  border: 1px solid black;
+    margin-left: 15px;
+    padding: 1%;
+    width: 52%;
+    border-radius: 40px;
+    border: 1px solid black;
 }
 
 .parrafoBanda {
-  padding: 1%;
-  color: #636363;
-  flex-wrap: nowrap;
-  width: 50%;
+    padding: 1%;
+    color: #636363;
+    flex-wrap: nowrap;
+    width: 50%;
+    margin-bottom: 50px;
 }
 
 .items {
-  color: #777777;
-  margin-left: 19%;
+    color: #777777;
+    /* margin-left: 19%; */
 }
 
 .preinscripcionesButton {
-  width: 10%;
+    width: 10%;
 }
 
 .inscripcionesBadna {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .link {
-  margin-left: 20%;
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 255, 0.342);
-  text-decoration: none;
-  color: #000000d3;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 15px;
-  font-weight: 900;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: rgb(0, 19, 78);
+    text-decoration: none;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .link:hover {
-  background-color: #80ffff83; /* Cambia el color al hacer hover */
-}
-
-.redesIcon {
-  display: flex;
-  align-items: center; /* Para centrar verticalmente */
-  gap: 15px;
-}
-
-.redesIconTam {
-  width: 30px;
-  cursor: pointer;
-}
-
-.redes {
-  margin-top: 5%;
-  display: flex;
-  flex-direction: column; /* Para apilar el contenido uno encima del otro */
-  align-items: center; /* Para centrar horizontalmente */
-  justify-content: center; /* Para centrar verticalmente */
+    background-color: rgba(0, 20, 78, 0.764);
 }
