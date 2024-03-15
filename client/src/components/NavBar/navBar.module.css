@@ -35,15 +35,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    padding: 0.5rem;
+    width: fit-content;
+    padding: 0.7rem;
     border-radius: 10px;
     background-color: rgb(0, 19, 78);
     text-decoration: none;
     color: white;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: clamp(10px, 1vw, 15px);
+    font-size: clamp(10px, 1vw, 20px);
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -51,4 +51,27 @@
 
 .link:hover {
     background-color: rgba(0, 20, 78, 0.764);
+}
+
+@media screen and (max-width: 650px) {
+    .navBar {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: start;
+        height: 400px;
+        /* overflow: hidden; */
+        background-image: url("../../views/Landing/LandingFotos/FotoRegional.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 2rem;
+        position: relative;
+        background-position: -400px 0px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .navBar {
+        background-position: -200px 0px;
+    }
 }

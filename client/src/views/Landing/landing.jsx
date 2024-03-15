@@ -7,7 +7,11 @@ const Inicio = () => {
     return (
         <div className={style.landing}>
             <NavBar />
-            <h1 className={style.title}>Batallón 11 - Gral. José María Paz</h1>
+            <div className={style.titleContainer}>
+                <h1 className={style.title}>Batallón 11</h1>
+                <span className={style.guion}>-</span>
+                <h1 className={style.title}>Gral. José María Paz</h1>
+            </div>
             <div className={style.homeText}>
                 <img src={logo11} alt="logo_11" className={style.logo11} />
                 <div>
