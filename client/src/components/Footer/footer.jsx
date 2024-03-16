@@ -6,10 +6,10 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Contacto from "../../views/Contacto/contacto";
 import style from "./footer.module.css";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
-    const isTablet = useMediaQuery("(min-width:550px)");
-    const isLaptop = useMediaQuery("(min-width:1366px)");
+    const navigate = useNavigate();
 
     return (
         <div className={style.footer}>
@@ -20,48 +20,54 @@ const Footer = () => {
                 <section className={style.redes}>
                     <h3 className={style.title}>Nuestras redes: </h3>
                     <div className={style.icons}>
-                        <InstagramIcon
-                            sx={{
-                                color: "rgb(243, 250, 255)",
-                                fontSize: "clamp(12px, 10vw, 3.5rem)",
-
-                                // ...(isTablet && { fontSize: "2.5rem" }),
-
-                                // ...(isLaptop && {
-                                //     fontSize: "clamp(12px, 4vw, 32px)",
-                                // }),
-                            }}
-                        />
-                        <FacebookIcon
-                            sx={{
-                                color: "rgb(243, 250, 255)",
-                                fontSize: "clamp(12px, 10vw, 3.5rem)",
-
-                                // ...(isTablet && { fontSize: "2.5rem" }),
-
-                                // ...(isLaptop && { fontSize: "3.5rem" }),
-                            }}
-                        />
-                        <YouTubeIcon
-                            sx={{
-                                color: "rgb(243, 250, 255)",
-                                fontSize: "clamp(12px, 10vw, 3.5rem)",
-
-                                // ...(isTablet && { fontSize: "2.5rem" }),
-
-                                // ...(isLaptop && { fontSize: "3.5rem" }),
-                            }}
-                        />
-                        <WhatsAppIcon
-                            sx={{
-                                color: "rgb(243, 250, 255)",
-                                fontSize: "clamp(12px, 10vw, 3.5rem)",
-
-                                // ...(isTablet && { fontSize: "2.5rem" }),
-
-                                // ...(isLaptop && { fontSize: "3.5rem" }),
-                            }}
-                        />
+                        <a
+                            href="https://www.instagram.com/batallon11/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <InstagramIcon
+                                sx={{
+                                    color: "rgb(243, 250, 255)",
+                                    fontSize: "clamp(12px, 10vw, 3.5rem)",
+                                }}
+                            />
+                        </a>
+                        <a
+                            href="https://web.facebook.com/Batallon11Cordoba"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FacebookIcon
+                                sx={{
+                                    color: "rgb(243, 250, 255)",
+                                    fontSize: "clamp(12px, 10vw, 3.5rem)",
+                                }}
+                            />
+                        </a>
+                        <a
+                            href="https://www.youtube.com/@Batallon11Cba"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <YouTubeIcon
+                                sx={{
+                                    color: "rgb(243, 250, 255)",
+                                    fontSize: "clamp(12px, 10vw, 3.5rem)",
+                                }}
+                            />
+                        </a>
+                        <a
+                            href="https://wa.me/+5493518599377"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <WhatsAppIcon
+                                sx={{
+                                    color: "rgb(243, 250, 255)",
+                                    fontSize: "clamp(12px, 10vw, 3.5rem)",
+                                }}
+                            />
+                        </a>
                     </div>
                 </section>
             </div>
