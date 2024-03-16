@@ -85,7 +85,7 @@
     background-color: rgba(0, 20, 78, 0.764);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
     .navBar {
         width: 100%;
         display: flex;
@@ -97,7 +97,7 @@
         background-size: cover;
         padding-bottom: 2rem;
         position: relative;
-        background-position: -400px 0px;
+        background-position: -450px 0px;
     }
 
     .container {
@@ -105,7 +105,7 @@
     }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 600px) {
     .navBar {
         background-position: -200px 0px;
     }
@@ -115,7 +115,7 @@
     }
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 920px) {
     .navBar {
         background-position: 0px 0px;
     }
