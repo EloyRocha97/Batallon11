@@ -83,7 +83,7 @@ const Inicio = () => {
                 >
                     Pre-Inscripciones
                 </a>
-                <a href="/salidas" className={style.link}>
+                <a href="/fotos" className={style.link}>
                     Nuestras Fotos
                 </a>
             </div>
