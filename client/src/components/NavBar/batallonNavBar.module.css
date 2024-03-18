@@ -5,7 +5,7 @@
   align-items: start;
   height: 400px;
   /* overflow: hidden; */
-  background-image: url("../../views/Landing/LandingFotos/FotoRegional.jpg");
+  background-image: url("../../views/Batallon/img/B&N.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 2rem;
@@ -36,6 +36,7 @@
 .batallon h1 {
   padding: 0;
   margin: 0;
+  -webkit-text-stroke: 3px black;
 }
 
 .links {
@@ -57,6 +58,13 @@
   padding: 2rem;
 }
 
+.logo11 {
+  width: 100px;
+}
+.logoExp {
+  width: 100px;
+}
+
 .link {
   display: flex;
   justify-content: center;
@@ -74,12 +82,11 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .link:hover {
   background-color: rgba(0, 20, 78, 0.764);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .navBar {
     width: 100%;
     display: flex;
@@ -87,12 +94,11 @@
     align-items: start;
     height: 400px;
     /* overflow: hidden; */
-    background-image: url("../../views/Landing/LandingFotos/FotoRegional.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 2rem;
     position: relative;
-    background-position: -400px 0px;
+    background-position: -450px 0px;
   }
 
   .container {
@@ -100,7 +106,7 @@
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 600px) {
   .navBar {
     background-position: -200px 0px;
   }
@@ -110,7 +116,7 @@
   }
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 920px) {
   .navBar {
     background-position: 0px 0px;
   }

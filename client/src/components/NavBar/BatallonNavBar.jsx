@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import style from "./bandaNavBar.module.css";
+import style from "./batallonNavBar.module.css";
 
-const BandaNavBar = () => {
+const BatallonNavBar = () => {
   const [selectedOption, setSelectedOption] = useState("");
 
   const handleClick = () => {
@@ -57,4 +57,4 @@ const BandaNavBar = () => {
   );
 };
 
-export default BandaNavBar;
+export default BatallonNavBar;
