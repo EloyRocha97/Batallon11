@@ -9,7 +9,7 @@ const Batallon = () => {
     <div className={style.banda}>
       <BatallonNavBar />
       <div className={style.bandaText}>
-        <img src={sedeVieja} alt="sede_vieja" />
+        <img src={sedeVieja} alt="sede_vieja"  className={style.sedeVieja}/>
         <img src={logo11} alt="logo_bata" className={style.logoBanda} />
         <div>
           <h2 className={style.titles}>Nuestra Historia</h2>
