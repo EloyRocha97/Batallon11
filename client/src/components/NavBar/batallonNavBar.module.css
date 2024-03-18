@@ -84,6 +84,11 @@
     transition: background-color 0.3s ease;
 }
 
+.option {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
 .select:focus {
     outline: none;
 }
