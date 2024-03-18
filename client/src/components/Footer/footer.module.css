@@ -72,7 +72,7 @@
         align-items: center;
     }
     .title {
-        font-size: clamp(15px, 4vw, 1rem);
+        font-size: clamp(15px, 4vw, 30px);
     }
 }
 
@@ -103,6 +103,6 @@
         align-items: center;
     }
     .title {
-        font-size: clamp(15px, 4vw, 1rem);
+        font-size: clamp(15px, 4vw, 20px);
     }
 }

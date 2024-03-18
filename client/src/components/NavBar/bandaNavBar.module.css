@@ -5,11 +5,12 @@
     align-items: start;
     height: 400px;
     /* overflow: hidden; */
-    background-image: url("../../views/Banda/img/Bandan.png");
+    background-image: url("../../views/Banda/img/Bandan.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 2rem;
     position: relative;
+    background-position: center;
 }
 
 .container {
@@ -64,6 +65,33 @@
     width: 100px;
 }
 
+.select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 19, 78);
+    text-decoration: none;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: clamp(10px, 1vw, 20px);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select:focus {
+    outline: none;
+}
+
+.select:hover {
+    background-color: rgba(0, 20, 78, 0.764);
+}
+
 .link {
     display: flex;
     justify-content: center;
@@ -86,40 +114,18 @@
 }
 
 @media screen and (max-width: 600px) {
-    .navBar {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: start;
-        height: 400px;
-        /* overflow: hidden; */
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-bottom: 2rem;
-        position: relative;
-        background-position: -450px 0px;
-    }
-
     .container {
         top: 40%;
     }
 }
 
 @media screen and (min-width: 600px) {
-    .navBar {
-        background-position: -200px 0px;
-    }
-
     .container {
         top: 30%;
     }
 }
 
 @media screen and (min-width: 920px) {
-    .navBar {
-        background-position: 0px 0px;
-    }
-
     .container {
         top: 20%;
     }

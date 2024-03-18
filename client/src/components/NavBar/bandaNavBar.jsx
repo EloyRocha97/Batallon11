@@ -44,7 +44,7 @@ const BandaNavBar = () => {
         <select
           value={selectedOption}
           onChange={handleOptionChange}
-          className={style.link}
+          className={style.select}
         >
           <option value="" disabled hidden>
             Historia
