@@ -1,56 +1,56 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
 }
 
 .fotos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 80%;
-    margin-top: 60px;
-    gap: 40px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 60px;
+  gap: 40px 40px;
 }
 
 .h2 {
-    z-index: 1;
-    color: rgba(255, 255, 255, 0.935);
-    text-shadow: 2px 2px 4px black;
-    font-size: xx-large;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.935);
+  text-shadow: 2px 2px 4px black;
+  font-size: xx-large;
+  pointer-events: none;
 }
 
 .fotoContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    position: relative;
-    width: 280px;
-    height: 280px;
-    border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border: none;
+  cursor: pointer;
 }
 
 .foto {
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    border-radius: 10px;
-    transition: transform 100ms;
-    border: none;
-
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  transition: transform 100ms;
+  border: none;
 }
 .foto:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-
 @media screen and (min-width: 1550px) {
-    .fotos{
-        width: 60%;
-    }
+  .fotos {
+    width: 60%;
+  }
 }
