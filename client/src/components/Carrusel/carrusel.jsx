@@ -1,10 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-import banda from "./bANDA.jpeg";
-import fut from "./20240106_114320.jpg";
-import guerr from "./Guerra.png";
-import pain from "./PaintBall.jpeg";
-import "./carrusel2.css";
+import banda from "./img/bANDA.jpeg";
+import fut from "./img/20240106_114320.jpg";
+import guerr from "./img/Banderas.png";
+import Heros from "./img/Heros.jpg";
+import Tierra from "./img/Tierra.jpg";
+import Buso from "./img/Buso.jpg";
+import Juego from "./img/MiniCarri.png";
+import "./carrusel.css";
 
 // Import Swiper styles
 import "swiper/css";
@@ -35,7 +38,16 @@ export default () => {
           <img src={guerr} alt="" className="img" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={pain} alt="" className="img" />
+          <img src={Tierra} alt="" className="img" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Buso} alt="" className="img" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Heros} alt="" className="img" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Juego} alt="" className="img" />
         </SwiperSlide>
       </Swiper>
     </div>
