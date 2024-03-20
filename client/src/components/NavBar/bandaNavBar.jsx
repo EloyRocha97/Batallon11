@@ -16,7 +16,7 @@ const BandaNavBar = () => {
     const selected = event.target.value;
     setSelectedOption(selected);
     if (selected === "batallon") {
-      window.location.href = "/batallon";
+      window.location.href = "";
     } else if (selected === "banda") {
       window.location.href = "/banda";
     }
