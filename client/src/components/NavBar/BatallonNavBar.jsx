@@ -27,7 +27,7 @@ const BatallonNavBar = () => {
       <div className={style.container}>
         <div className={style.batallon}>
           <h1>Batallón 11</h1>
-          <h1>Gral. José María Paz</h1>
+          <h3>Gral. José María Paz</h3>
         </div>
       </div>
       <div className={style.links}>
