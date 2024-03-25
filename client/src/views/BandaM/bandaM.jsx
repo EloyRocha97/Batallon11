@@ -1,9 +1,9 @@
-import BandaLogo from "./img/BandaLogo.png";
-import style from "./banda.module.css";
+import BandaLogo from "../Banda/img/BandaLogo.png";
+import style from "./bandaM.module.css";
 import BandaNavBar from "../../components/NavBar/bandaNavBar";
 import Footer from "../../components/Footer/footer";
 
-const Banda = () => {
+const BandaM = () => {
   return (
     <div className={style.banda}>
       <BandaNavBar />
@@ -74,4 +74,4 @@ const Banda = () => {
   );
 };
 
-export default Banda;
+export default BandaM;

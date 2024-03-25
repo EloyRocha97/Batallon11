@@ -1,16 +1,16 @@
-import BandaLogo from "./img/BandaLogo.png";
-import style from "./banda.module.css";
+import db from "../Landing/LandingFotos/Don Bosco.png";
+import style from "./mjs.module.css";
 import BandaNavBar from "../../components/NavBar/bandaNavBar";
 import Footer from "../../components/Footer/footer";
 
-const Banda = () => {
+const Mjs = () => {
   return (
     <div className={style.banda}>
       <BandaNavBar />
       <div className={style.bandaText}>
-        <img src={BandaLogo} alt="logo_banda" className={style.logoBanda} />
+        <img src={db} alt="logo_db" className={style.logoDb} />
         <div>
-          <h2 className={style.titles}>Nuestra banda de música</h2>
+          <h2 className={style.titles}>Parroquia</h2>
           <p className={style.text}>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et numquam
             omnis harum accusantium, delectus voluptates sit voluptate illo
@@ -27,6 +27,7 @@ const Banda = () => {
             asperiores accusamus, provident commodi aperiam quibusdam! Cum iure
             exercitationem vero doloribus qui, error odit! Aperiam!
           </p>
+          <h2 className={style.titles}>M.J.S.</h2>
           <p className={style.text}>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et numquam
             omnis harum accusantium, delectus voluptates sit voluptate illo
@@ -61,17 +62,10 @@ const Banda = () => {
           </p>
         </div>
       </div>
-      <a
-        href="https://forms.gle/Y3r6F3pAbE6dvMmk9"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={style.link}
-      >
-        Inscripciones
-      </a>
+
       <Footer />
     </div>
   );
 };
 
-export default Banda;
+export default Mjs;

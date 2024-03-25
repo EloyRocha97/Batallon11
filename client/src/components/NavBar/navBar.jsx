@@ -17,9 +17,19 @@ const NavBar = () => {
     const selected = event.target.value;
     setSelectedOption(selected);
     if (selected === "batallon") {
-      window.location.href = "";
+      window.location.href = "/batallon";
     } else if (selected === "banda") {
       window.location.href = "/banda";
+    }
+  };
+
+  const handleOptionChangeN = (event) => {
+    const selected = event.target.value;
+    setSelectedOption(selected);
+    if (selected === "E.A.D.B.") {
+      window.location.href = "";
+    } else if (selected === "M.J.S") {
+      window.location.href = "/mjs";
     }
   };
 
@@ -42,6 +52,30 @@ const NavBar = () => {
         >
           Inscripciones
         </a>
+        <Link to="/bandaM" className={style.link} onClick={handleClick}>
+          Banda
+        </Link>
+
+        <select
+          value={selectedOption}
+          onChange={handleOptionChangeN}
+          className={style.select}
+        >
+          <option value="" disabled hidden className={style.option}>
+            Nosotros
+          </option>
+          <option value="E.A.D.B." className={style.option}>
+            E.A.D.B.
+          </option>
+          <option value="M.J.S" className={style.option}>
+            M.J.S
+          </option>
+        </select>
+
+        <Link to="/mistica" className={style.link} onClick={handleClick}>
+          Mistica
+        </Link>
+
         <select
           value={selectedOption}
           onChange={handleOptionChange}

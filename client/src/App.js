@@ -1,6 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import axios from "axios";
-import { Banda, Fichas, Inicio, Salidas, Batallon } from "./views";
+import { Banda, Fichas, Inicio, Salidas, Batallon, BandaM, Mjs } from "./views";
 import NavBar from "./components/NavBar/navBar";
 import style from "./app.module.css";
 import BackToTop from "./components/BackToTop/backToTop";
@@ -11,6 +11,8 @@ function App() {
   const hideNavBar =
     location.pathname === "/" ||
     location.pathname === "/banda" ||
+    location.pathname === "/bandaM" ||
+    location.pathname === "/mjs" ||
     location.pathname === "/batallon" ||
     location.pathname === "/fotos";
 
@@ -23,6 +25,8 @@ function App() {
         <Route path="/fichas" element={<Fichas />} />
         <Route path="/fotos" element={<Salidas />} />
         <Route path="/banda" element={<Banda />} />
+        <Route path="/bandaM" element={<BandaM />} />
+        <Route path="/mjs" element={<Mjs />} />
         <Route path="/batallon" element={<Batallon />} />
       </Routes>
     </div>

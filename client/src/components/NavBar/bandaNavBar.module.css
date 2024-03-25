@@ -31,7 +31,7 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
   font-size: clamp(1px, 4vw, 3.5rem);
   font-weight: bolder;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 .batallon h1 {
@@ -40,6 +40,7 @@
 }
 
 .batallon h3 {
+  margin-top: 0;
   font-size: 2rem;
   font-family: "BioRhyme", serif;
 }
