@@ -1,12 +1,12 @@
 import db from "../Landing/LandingFotos/Don Bosco.png";
 import style from "./mjs.module.css";
-import BandaNavBar from "../../components/NavBar/bandaNavBar";
 import Footer from "../../components/Footer/footer";
+import MjsNav from "../../components/NavBar/mjsNav";
 
 const Mjs = () => {
   return (
     <div className={style.banda}>
-      <BandaNavBar />
+      <MjsNav />
       <div className={style.bandaText}>
         <img src={db} alt="logo_db" className={style.logoDb} />
         <div>
