@@ -27,7 +27,7 @@ const NavBar = () => {
     const selected = event.target.value;
     setSelectedOption(selected);
     if (selected === "E.A.D.B.") {
-      window.location.href = "";
+      window.location.href = "https://eadb.org.ar/";
     } else if (selected === "M.J.S") {
       window.location.href = "/mjs";
     }
