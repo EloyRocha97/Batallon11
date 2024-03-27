@@ -139,6 +139,101 @@ const Mistica = () => {
             10. Es artífice de su vida y constructor de un mundo mejor en su
             comunidad.
           </p>
+
+          <h2 className={style.titles}>Canción siempre listo:</h2>
+          <h1 className={style.text}>
+            La semilla va brotando desde horneros,
+            <br />
+            va creciendo y despacito se hace flor.
+            <br />
+            Adalides la acompañan y nace del corazón,
+            <br />
+            un compromiso como un puente hacia Dios.
+            <br />
+            Alegría y oración, viviendo el SIEMPRE MEJOR.
+            <br />
+            ¡Siempre Listo!, Yo soy explorador, explorador... (2v)
+          </h1>
+
+          <h1 className={style.text}>
+            Mi mochila guardará mis anhelos,
+            <br />
+            mi promesa, mi rosario y mis sueños;
+            <br />
+            toda mi vida explorador... Explorador.
+            <br />
+            Caminante yo seré por las estrellas,
+            <br />
+            un Pionero en la galaxia del amor,
+            <br />
+            y a través del universo un valiente Rastreador,
+            <br />
+            con la audacia de un Baquiano rumbo al Sol.
+            <br />
+            De Don Bosco un batallón, de Argentina y para Dios.
+            <br />
+            ¡Siempre Listo!, Yo soy explorador, explorador... (2v)
+          </h1>
+
+          <h1 className={style.text}>
+            Una Chispita yo seré por las estrellas,
+            <br />
+            una Fuego, en la galaxia del amor,
+            <br />
+            y a través del universo una Hoguera un corazón,
+            <br />
+            con la audacia de una Antorcha rumbo al Sol.
+            <br />
+            De Don Bosco un batallón, de Argentina y para Dios.
+            <br />
+            ¡Siempre Listo!, Yo soy explorador, explorador... (2v)
+          </h1>
+
+          <h1 className={style.text}>
+            Treparemos más allá de las tormentas.
+            <br />
+            Nuestra carpa la noche desafiará y ataremos la patrulla
+            <br />
+            con un nudo de amistad, y un mangrullo alto y fuerte crecerá.
+            <br />
+            Entrenándonos así, aprendemos a vivir.
+            <br />
+            ¡Siempre Listo!, Yo soy explorador, explorador...
+          </h1>
+          <h2 className={style.titles}>Himno del explorador/a</h2>
+          <p className={style.text}>
+            Cuando desfilas Batallón levantas alma y corazón.
+            <br />
+            Hoy te preparas a sufrir las arduas luchas del vivir.
+            <br />
+            Dentro del alma la virtud, fuera, en el cuerpo, la salud;
+            <br />
+            entre la turba juvenil hay siempre luz primaveril primaveril
+            primaveril.
+            <br />
+            <br />
+            Por todas partes el honor de ser un digno Explorador!
+            <br />
+            Siempre bizarro Batallón, y siempre listo el corazón, corazón
+            <br />
+            <br />
+            Somos aurora que al abrir el gran celaje del vivir,
+            <br />
+            pone su nota de beldad en nuestra pálida heredad.
+            <br />
+            A los redobles del tambor marcha alegre Explorador
+            <br />
+            rumbo al mañana, hacia el ideal que es nuestra cumbre terminal.
+            <br />
+            <br />
+            Con la mirada puesta en Dios, y de la enseña siempre en pos,
+            <br />
+            vamos triunfantes a subir la cumbre ideal del porvenir.
+            <br />
+            Nuestra bandera es la virtud que hace inmortal a la juventud,
+            <br />
+            bandera pura, bandera angelical, como una brisa matinal.
+          </p>
         </div>
       </div>
 
