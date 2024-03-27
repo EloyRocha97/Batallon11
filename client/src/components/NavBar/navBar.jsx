@@ -35,8 +35,7 @@ const NavBar = () => {
         } else if (location.pathname.startsWith("/mjs")) {
             setNavBarPhoto(style.navBarMjs);
         } else {
-            // En caso de que no haya ninguna coincidencia, puedes establecer una imagen predeterminada
-            setNavBarPhoto("../../views/Banda/img/Bandan.jpg");
+            setNavBarPhoto(style.navBar);
         }
     }, [location.pathname]);
 
