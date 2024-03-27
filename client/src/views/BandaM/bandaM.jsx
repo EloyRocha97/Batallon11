@@ -4,11 +4,12 @@ import BandaPicRe from "../Banda/img/RedBanda.jpg";
 import style from "./bandaM.module.css";
 import BandaNavBar from "../../components/NavBar/bandaNavBar";
 import Footer from "../../components/Footer/footer";
+import NavBar from "../../components/NavBar/navBar";
 
 const BandaM = () => {
   return (
     <div className={style.banda}>
-      <BandaNavBar />
+      <NavBar />
       <div className={style.bandaText}>
         <img src={BandaLogo} alt="logo_banda" className={style.logoBanda} />
         <div>

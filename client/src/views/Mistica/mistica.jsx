@@ -4,11 +4,12 @@ import Footer from "../../components/Footer/footer";
 import MjsNav from "../../components/NavBar/mjsNav";
 import pdfFile from "./Mística del Ser Explorador.pdf";
 import pdfIcon from "./pdf_icon.png";
+import NavBar from "../../components/NavBar/navBar";
 
 const Mistica = () => {
   return (
     <div className={style.mistica}>
-      <MjsNav />
+      <NavBar />
       <div className={style.misticaText}>
         <img src={nacional} alt="logo_db" className={style.logonacional} />
         <div>

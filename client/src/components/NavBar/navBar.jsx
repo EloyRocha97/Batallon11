@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import style from "./navBar.module.css";
 import {
     FormControl,
@@ -13,10 +13,32 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import logo11 from "../../views/Landing/LandingFotos/bata11.png";
+import inicio from "../../views/Landing/LandingFotos/FotoRegional.jpg";
+import fotoBanda from "../../views/Banda/img/Bandan.jpg";
 
 const NavBar = () => {
+    const location = useLocation();
     const [selectedOption, setSelectedOption] = useState("");
     const [isOpen, setIsOpen] = useState(false);
+
+    const [navBarPhoto, setNavBarPhoto] = useState("");
+
+    useEffect(() => {
+        if (location.pathname === "/") {
+            setNavBarPhoto(style.navBar);
+        } else if (location.pathname.startsWith("/banda")) {
+            setNavBarPhoto(style.navBarBanda);
+        } else if (location.pathname.startsWith("/batallon")) {
+            setNavBarPhoto(style.navBarBatallon);
+        } else if (location.pathname.startsWith("/mistica")) {
+            setNavBarPhoto(style.navBarMistica);
+        } else if (location.pathname.startsWith("/mjs")) {
+            setNavBarPhoto(style.navBarMjs);
+        } else {
+            // En caso de que no haya ninguna coincidencia, puedes establecer una imagen predeterminada
+            setNavBarPhoto("../../views/Banda/img/Bandan.jpg");
+        }
+    }, [location.pathname]);
 
     const handleOpenMenu = () => {
         setIsOpen(!isOpen);
@@ -143,7 +165,6 @@ const NavBar = () => {
                                 gap: "10px",
                                 backgroundColor: "rgba(0, 20, 78, 0.9)",
                                 padding: "20px",
-
                             }}
                         >
                             <Link
@@ -161,7 +182,7 @@ const NavBar = () => {
                                 Inscripciones
                             </a>
                             <Link
-                                to="/bandaM"
+                                to="/banda"
                                 className={style.phoneLink}
                                 onClick={handleClick}
                             >
@@ -232,7 +253,8 @@ const NavBar = () => {
                     )}
                 </Box>
             ) : (
-                <div className={!isPhone ? style.navBar : style.phoneNavBar}>
+                //este box
+                <div className={navBarPhoto}>
                     <div className={style.container}>
                         <div className={style.batallon}>
                             <h1>Batallón 11</h1>
@@ -255,7 +277,7 @@ const NavBar = () => {
                             Inscripciones
                         </a>
                         <Link
-                            to="/bandaM"
+                            to="/banda"
                             className={style.link}
                             onClick={handleClick}
                         >

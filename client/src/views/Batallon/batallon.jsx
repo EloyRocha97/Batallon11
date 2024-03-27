@@ -3,11 +3,12 @@ import logo11 from "../Landing/LandingFotos/bata11.png";
 import sedeVieja from "./img/NavBarBATALLON.jpeg";
 import Footer from "../../components/Footer/footer";
 import style from "./batallon.module.css";
+import NavBar from "../../components/NavBar/navBar";
 
 const Batallon = () => {
   return (
     <div className={style.banda}>
-      <BatallonNavBar />
+      <NavBar />
       <div className={style.bandaText}>
         <img src={sedeVieja} alt="sede_vieja" className={style.sedeVieja} />
         <img src={logo11} alt="logo_bata" className={style.logoBanda} />
