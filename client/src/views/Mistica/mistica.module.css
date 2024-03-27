@@ -47,6 +47,14 @@
   font-weight: bold;
 }
 
+.text span.spanes {
+  color: rgb(175, 175, 5);
+}
+
+.text span.espanes {
+  color: red;
+}
+
 .text2 {
   color: rgb(0, 22, 89);
   z-index: 1;

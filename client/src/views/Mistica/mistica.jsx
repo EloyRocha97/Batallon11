@@ -45,27 +45,34 @@ const Mistica = () => {
             <br />
             <br />
             Su proceso de formación se basa en una metodología:{" "}
-            <span>el Sistema de Patrulla</span>,
+            <span className={style.spanes}>el Sistema de Patrulla</span>,
             <br />
-            en la que tiene prioridad: <span>la Corresponsabilidad</span>,
+            en la que tiene prioridad:{" "}
+            <span className={style.spanes}>la Corresponsabilidad</span>,
             <br />
-            dando lugar al: <span>Liderazgo Juvenil</span>,
+            dando lugar al:{" "}
+            <span className={style.spanes}>Liderazgo Juvenil</span>,
             <br />
             teniendo por centro la:{" "}
-            <span>educación del Joven por el Joven mismo</span>
+            <span className={style.spanes}>
+              educación del Joven por el Joven mismo
+            </span>
             <br />y desarrolla su actividad en un clima de:{" "}
-            <span>Aventura</span>,
+            <span className={style.spanes}>Aventura</span>,
             <br />
-            convirtiéndolo todo en un: <span>Juego Educativo</span>
+            convirtiéndolo todo en un:{" "}
+            <span className={style.spanes}>Juego Educativo</span>
             .
             <br />
             <br />
             Muchos de estos elementos se expresan a través de:{" "}
-            <span>las Insignias y el Uniforme</span>
+            <span className={style.espanes}>las Insignias y el Uniforme</span>
             <br />y los celebra en:{" "}
-            <span>las Canciones, Ceremonias y Experiencias Espirituales</span>
+            <span className={style.espanes}>
+              las Canciones, Ceremonias y Experiencias Espirituales
+            </span>
             <br />y con estos ideales y principios:{" "}
-            <span>ORIENTA TODA SU VIDA</span>.
+            <span className={style.espanes}>ORIENTA TODA SU VIDA</span>.
           </p>
 
           <h2 className={style.titles}>Oración del explorador</h2>
