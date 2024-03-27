@@ -1,0 +1,48 @@
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedorCarrusel {
+    width: 40%;
+    height: 500px;
+    margin-top: 40px;
+    border: 2px solid #00134e;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.swiperSlide {
+    width: 100%;
+}
+
+.swiperSlide img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Establece la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Esto hace que la imagen cubra todo el espacio disponible */
+}
+
+@media screen and (max-width: 600px) {
+    .contenedorCarrusel {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 600px) {
+    .contenedorCarrusel {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .contenedorCarrusel {
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .contenedorCarrusel {
+        width: 40%;
+    }
+}
