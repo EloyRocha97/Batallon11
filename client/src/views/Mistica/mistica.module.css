@@ -49,10 +49,12 @@
 
 .text span.spanes {
   color: rgb(175, 175, 5);
+  font-weight: bold;
 }
 
 .text span.espanes {
   color: red;
+  font-weight: bold;
 }
 
 .text2 {
@@ -176,4 +178,32 @@
 
 .link:hover {
   background-color: rgba(0, 20, 78, 0.764);
+}
+
+.moreInfo {
+  display: flex;
+  gap: 20px;
+}
+
+.pdfIcon {
+  width: 80px;
+}
+
+.pdfTitle {
+  color: rgb(0, 22, 89);
+  font-weight: bold;
+  margin-bottom: -12px;
+}
+
+.textP {
+  color: rgb(0, 22, 89);
+  z-index: 1;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.downloadLink:hover {
+  text-decoration: none;
 }
