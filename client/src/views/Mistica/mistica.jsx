@@ -2,6 +2,8 @@ import nacional from "../Landing/LandingFotos/LogoExp.png";
 import style from "./mistica.module.css";
 import Footer from "../../components/Footer/footer";
 import MjsNav from "../../components/NavBar/mjsNav";
+import pdfFile from "./Mística del Ser Explorador.pdf";
+import pdfIcon from "./pdf_icon.png";
 
 const Mistica = () => {
   return (
@@ -234,6 +236,24 @@ const Mistica = () => {
             <br />
             bandera pura, bandera angelical, como una brisa matinal.
           </p>
+
+          <h2 className={style.titles}> Para mas acerca de la Mistica:</h2>
+          <div className={style.moreInfo}>
+            <a href={pdfFile} download>
+              <img src={pdfIcon} alt="Icono PDF" className={style.pdfIcon} />
+            </a>
+            <div className={style.pdfInfo}>
+              <p className={style.pdfTitle}>Mística del Ser Explorador</p>
+              <p className={style.textP}>
+                Mística del Ser Explorador.pdf
+                <br />
+                Documento Adobe Acrobat 385.5 KB
+              </p>
+              <a href={pdfFile} download className={style.downloadLink}>
+                Descargar
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
