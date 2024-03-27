@@ -1,6 +1,15 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import axios from "axios";
-import { Banda, Fichas, Inicio, Salidas, Batallon, BandaM, Mjs } from "./views";
+import {
+  Banda,
+  Fichas,
+  Inicio,
+  Salidas,
+  Batallon,
+  BandaM,
+  Mjs,
+  Mistica,
+} from "./views";
 import NavBar from "./components/NavBar/navBar";
 import style from "./app.module.css";
 import BackToTop from "./components/BackToTop/backToTop";
@@ -13,6 +22,7 @@ function App() {
     location.pathname === "/banda" ||
     location.pathname === "/bandaM" ||
     location.pathname === "/mjs" ||
+    location.pathname === "/mistica" ||
     location.pathname === "/batallon" ||
     location.pathname === "/fotos";
 
@@ -27,6 +37,7 @@ function App() {
         <Route path="/banda" element={<Banda />} />
         <Route path="/bandaM" element={<BandaM />} />
         <Route path="/mjs" element={<Mjs />} />
+        <Route path="/mistica" element={<Mistica />} />
         <Route path="/batallon" element={<Batallon />} />
       </Routes>
     </div>

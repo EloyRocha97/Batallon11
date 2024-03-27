@@ -1,4 +1,6 @@
 import BandaLogo from "../Banda/img/BandaLogo.png";
+import BandaPic from "../Banda/img/BandaReg.jpeg";
+import BandaPicRe from "../Banda/img/RedBanda.jpg";
 import style from "./bandaM.module.css";
 import BandaNavBar from "../../components/NavBar/bandaNavBar";
 import Footer from "../../components/Footer/footer";
@@ -12,55 +14,32 @@ const BandaM = () => {
         <div>
           <h2 className={style.titles}>Nuestra banda de música</h2>
           <p className={style.text}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et numquam
-            omnis harum accusantium, delectus voluptates sit voluptate illo
-            reprehenderit consequatur, molestias doloribus beatae dolor eum est
-            voluptas iste earum distinctio. Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Quibusdam commodi aperiam corporis at
-            asperiores nemo esse, quia aspernatur rem. Perferendis illum a quis
-            quidem numquam dolore, sint suscipit culpa asperiores! Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Consequuntur nihil
-            vitae velit harum, in temporibus eveniet obcaecati laboriosam sit
-            accusantium dolores quis amet, mollitia iusto consectetur! Incidunt
-            autem vero pariatur?Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Odit, iusto beatae dolor et voluptatum, nemo
-            asperiores accusamus, provident commodi aperiam quibusdam! Cum iure
-            exercitationem vero doloribus qui, error odit! Aperiam!
-          </p>
-          <p className={style.text}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et numquam
-            omnis harum accusantium, delectus voluptates sit voluptate illo
-            reprehenderit consequatur, molestias doloribus beatae dolor eum est
-            voluptas iste earum distinctio. Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Quibusdam commodi aperiam corporis at
-            asperiores nemo esse, quia aspernatur rem. Perferendis illum a quis
-            quidem numquam dolore, sint suscipit culpa asperiores! Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Consequuntur nihil
-            vitae velit harum, in temporibus eveniet obcaecati laboriosam sit
-            accusantium dolores quis amet, mollitia iusto consectetur! Incidunt
-            autem vero pariatur?Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Odit, iusto beatae dolor et voluptatum, nemo
-            asperiores accusamus, provident commodi aperiam quibusdam! Cum iure
-            exercitationem vero doloribus qui, error odit! Aperiam!
-          </p>
-          <p className={style.text}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et numquam
-            omnis harum accusantium, delectus voluptates sit voluptate illo
-            reprehenderit consequatur, molestias doloribus beatae dolor eum est
-            voluptas iste earum distinctio. Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Quibusdam commodi aperiam corporis at
-            asperiores nemo esse, quia aspernatur rem. Perferendis illum a quis
-            quidem numquam dolore, sint suscipit culpa asperiores! Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Consequuntur nihil
-            vitae velit harum, in temporibus eveniet obcaecati laboriosam sit
-            accusantium dolores quis amet, mollitia iusto consectetur! Incidunt
-            autem vero pariatur?Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Odit, iusto beatae dolor et voluptatum, nemo
-            asperiores accusamus, provident commodi aperiam quibusdam! Cum iure
-            exercitationem vero doloribus qui, error odit! Aperiam!
+            Una de las propuestas pastorales más importantes dentro del batallón
+            11, es su banda de música infanto juvenil.
+            <br />
+            La Banda de Música es una propuesta educativa que invita a los
+            chicos del batallón a formarse musicalmente. La participación es
+            incentivada y motivada desde el batallón, facilitando a los
+            adolescentes y jóvenes, la posibilidad de aprender a ejecutar un
+            instrumento de viento o percusión, complementariamente con una
+            formación teórico-práctica.
+            <br />
+            Asistir los sábados a las actividades del batallón, es un requisito
+            para cada músico que integra la banda. Cabe aclara que en la misma
+            no solo se aprenden conocimientos musicales, sino que los jóvenes
+            desarrollan habilidades como, el trabajo en equipo, la inclusión, la
+            coordinación entre otras.
+            <br />
+            La banda no solo es un lugar de esparcimiento más, es un auténtico
+            espacio educativo el cual ha inspirado a decenas de exploradores a
+            seguir el camino de la música, desde docentes en la materia, a
+            músicos profesionales que hoy en día forman parte de bandas
+            militares, policiales y populares.
           </p>
         </div>
       </div>
+      <img src={BandaPic} alt="foto_banda" className={style.fotoBanda1} />
+      <img src={BandaPicRe} alt="foto_bandare" className={style.fotoBanda} />
       <a
         href="https://forms.gle/Y3r6F3pAbE6dvMmk9"
         target="_blank"

@@ -1,13 +1,12 @@
-.banda {
+.mistica {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
 }
 
-.bandaText {
-  margin-top: 50px;
+.misticaText {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +20,7 @@
   position: relative;
 }
 
-.logoBanda {
+.logonacional {
   width: 35%;
   position: absolute;
   /* z-index: -1; */
@@ -41,6 +40,28 @@
   font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
+}
+
+.text span {
+  color: rgb(0, 22, 89);
+  font-weight: bold;
+}
+
+.text2 {
+  color: rgb(0, 22, 89);
+  z-index: 1;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: -20px;
+}
+.text3 {
+  color: rgb(0, 22, 89);
+  z-index: 1;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: -20px;
 }
 
 .all {
@@ -100,25 +121,6 @@
   width: 52%;
   border-radius: 40px;
   border: 1px solid black;
-}
-
-.fotoBanda1 {
-  width: 500px;
-  margin-left: 10%;
-  margin-right: auto;
-  border-radius: 5px;
-  border: 1px solid black;
-  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.26);
-}
-
-.fotoBanda {
-  width: 500px;
-  margin-left: 10%;
-  margin-right: auto;
-  margin-bottom: 50px;
-  border-radius: 5px;
-  border: 1px solid black;
-  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.26);
 }
 
 .parrafoBanda {
