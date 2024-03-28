@@ -12,7 +12,8 @@ import {
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import logo11 from "../../views/Landing/LandingFotos/bata11.png";
+// import logo11 from "../../views/Landing/LandingFotos/bata11.png";
+import logo11 from "../../views/Landing/LandingFotos/Batallon 11 Gral Jose M Paz.png";
 import inicio from "../../views/Landing/LandingFotos/FotoRegional.jpg";
 import fotoBanda from "../../views/Banda/img/Bandan.jpg";
 
@@ -84,7 +85,7 @@ const NavBar = () => {
                         sx={{
                             display: isPhone ? "flex" : "none",
                             minWidth: "100%",
-                            height: "61px",
+                            height: "71px",
                             justifyContent: "space-between",
                             alignItems: "center",
                             backgroundColor: "rgba(0, 20, 78)",
@@ -97,7 +98,7 @@ const NavBar = () => {
                             sx={{
                                 display: isPhone ? "flex" : "none",
                                 minWidth: "60px",
-                                height: "59px",
+                                height: "69px",
                                 borderRadius: "0px",
                                 backgroundColor: "rgba(0, 20, 78)",
                                 color: "rgba(0, 20, 78)",
