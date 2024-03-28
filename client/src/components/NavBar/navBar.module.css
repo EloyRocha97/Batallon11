@@ -110,7 +110,6 @@
     justify-content: center;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-    font-size: clamp(1px, 4vw, 3.5rem);
     line-height: 0.5;
     font-weight: bolder;
     opacity: 0.9;
@@ -119,11 +118,12 @@
 .batallon h1 {
     padding: 0;
     margin: 0;
+    font-size: clamp(1px, 6vw, 5.5rem);
 }
 
 .batallon h3 {
     font-size: 2rem;
-    font-family: "BioRhyme", serif;
+    font-size: clamp(1px, 2vw, 2.5rem);
 }
 
 .links {

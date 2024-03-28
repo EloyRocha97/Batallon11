@@ -2,7 +2,6 @@ import BandaLogo from "../Banda/img/BandaLogo.png";
 import BandaPic from "../Banda/img/BandaReg.jpeg";
 import BandaPicRe from "../Banda/img/RedBanda.jpg";
 import style from "./bandaM.module.css";
-import BandaNavBar from "../../components/NavBar/bandaNavBar";
 import Footer from "../../components/Footer/footer";
 import NavBar from "../../components/NavBar/navBar";
 
