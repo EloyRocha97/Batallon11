@@ -133,11 +133,12 @@ const Mistica = () => {
                         Amén.
                     </p>
 
-                    <h2 className={style.titles}>Ley de Honor</h2>
-                    <h1 className={style.text3}>
-                        {" "}
-                        El explorador/ La exploradora:
-                    </h1>
+                    <div>
+                        <h1 className={style.titles}>Ley de Honor</h1>
+                        <h2 className={style.text3}>
+                            El explorador/ La exploradora:
+                        </h2>
+                    </div>
                     <ol className={style.text}>
                         <li>
                             Vive íntegramente su fe, siendo testigo de Cristo y
@@ -193,7 +194,7 @@ const Mistica = () => {
                         <br />
                         Alegría y oración, viviendo el SIEMPRE MEJOR.
                         <br />
-                        ¡Siempre Listo!, Yo soy explorador, explorador... (2v)
+                        ¡Siempre Listo!, Yo soy explorador, explorador... (x2)
                     </h1>
 
                     <h1 className={style.text}>
@@ -213,7 +214,7 @@ const Mistica = () => {
                         <br />
                         De Don Bosco un batallón, de Argentina y para Dios.
                         <br />
-                        ¡Siempre Listo!, Yo soy explorador, explorador... (2v)
+                        ¡Siempre Listo!, Yo soy explorador, explorador... (x2)
                     </h1>
 
                     <h1 className={style.text}>
@@ -227,7 +228,7 @@ const Mistica = () => {
                         <br />
                         De Don Bosco un batallón, de Argentina y para Dios.
                         <br />
-                        ¡Siempre Listo!, Yo soy explorador, explorador... (2v)
+                        ¡Siempre Listo!, Yo soy explorador, explorador... (x2)
                     </h1>
 
                     <h1 className={style.text}>
@@ -283,7 +284,6 @@ const Mistica = () => {
                     </p>
 
                     <h2 className={style.titles}>
-                        {" "}
                         Para mas acerca de la Mistica:
                     </h2>
                     <div className={style.moreInfo}>
