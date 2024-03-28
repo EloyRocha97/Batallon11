@@ -26,9 +26,9 @@ const NavBar = () => {
     useEffect(() => {
         if (location.pathname === "/") {
             setNavBarPhoto(style.navBar);
-        } else if (location.pathname.startsWith("/banda")) {
+        } else if (location.pathname.startsWith("/banda") || location.pathname.startsWith("/historia/banda")) {
             setNavBarPhoto(style.navBarBanda);
-        } else if (location.pathname.startsWith("/batallon")) {
+        } else if (location.pathname.startsWith("/historia/batallon")) {
             setNavBarPhoto(style.navBarBatallon);
         } else if (location.pathname.startsWith("/mistica")) {
             setNavBarPhoto(style.navBarMistica);
@@ -56,9 +56,9 @@ const NavBar = () => {
         const selected = event.target.value;
         setSelectedOption(selected);
         if (selected === "batallon") {
-            window.location.href = "/batallon";
+            window.location.href = "/historia/batallon";
         } else if (selected === "banda") {
-            window.location.href = "/banda";
+            window.location.href = "/historia/banda";
         }
     };
 

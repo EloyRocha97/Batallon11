@@ -6,7 +6,7 @@ import {
   Inicio,
   Salidas,
   Batallon,
-  BandaM,
+  BandaHistoria,
   Mjs,
   Mistica,
 } from "./views";
@@ -20,10 +20,10 @@ function App() {
   const hideNavBar =
     location.pathname === "/" ||
     location.pathname === "/banda" ||
-    location.pathname === "/bandaM" ||
+    location.pathname === "/historia/banda" ||
     location.pathname === "/mjs" ||
     location.pathname === "/mistica" ||
-    location.pathname === "/batallon" ||
+    location.pathname === "/historia/batallon" ||
     location.pathname === "/fotos";
 
   return (
@@ -35,10 +35,10 @@ function App() {
         <Route path="/fichas" element={<Fichas />} />
         <Route path="/fotos" element={<Salidas />} />
         <Route path="/banda" element={<Banda />} />
-        <Route path="/bandaM" element={<BandaM />} />
+        <Route path="/historia/banda" element={<BandaHistoria />} />
         <Route path="/mjs" element={<Mjs />} />
         <Route path="/mistica" element={<Mistica />} />
-        <Route path="/batallon" element={<Batallon />} />
+        <Route path="/historia/batallon" element={<Batallon />} />
       </Routes>
     </div>
   );
