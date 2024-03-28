@@ -13,7 +13,7 @@
     justify-content: center;
     /* width: 50%; */
     /* margin-top: 4%; */
-    padding: 6px 2rem 6px 2rem;
+    padding: 2rem;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
@@ -37,6 +37,7 @@
 }
 
 .titles {
+    margin-top: 0;
     color: rgb(0, 19, 78);
     z-index: 1;
     font-size: 25px;
@@ -73,7 +74,7 @@
     line-height: 1.5;
 }
 .text3 {
-  margin-top: 0;
+    margin-top: 0;
     color: rgb(0, 22, 89);
     z-index: 1;
     font-size: 20px;

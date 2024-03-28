@@ -12,7 +12,6 @@ import {
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import useMediaQuery from "@mui/material/useMediaQuery";
-// import logo11 from "../../views/Landing/LandingFotos/bata11.png";
 import logo11 from "../../views/Landing/LandingFotos/Batallon 11 Gral Jose M Paz.png";
 import inicio from "../../views/Landing/LandingFotos/FotoRegional.jpg";
 import fotoBanda from "../../views/Banda/img/Bandan.jpg";
