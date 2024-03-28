@@ -138,30 +138,48 @@ const Mistica = () => {
                         {" "}
                         El explorador/ La exploradora:
                     </h1>
-                    <p className={style.text}>
-                        1. Vive íntegramente su fe, siendo testigo de Cristo y
-                        miembro activo de su Iglesia.
-                        <br />
-                        2. Quiere a su Patria; desea y busca la paz, por eso
-                        trabaja por la justicia. <br />
-                        3. Ama y obedece pronta y alegremente a sus padres y
-                        superiores. Se siente corresponsable con ellos. <br />
-                        4. Está siempre listo para servir, colabora en toda
-                        iniciativa buena. <br />
-                        5. Es amigo y hermano de todos, porque en ellos ve a
-                        Cristo. <br />
-                        6. Es educado y limpio en sus pensamientos, palabras y
-                        acciones. <br />
-                        7. Es noble, generoso y alegre, aún en las dificultades.
-                        <br />
-                        8. Es leal, veraz y digno de confianza, no realiza nada
-                        a medias. <br />
-                        9. Admira, respeta y perfecciona la naturaleza, por ser
-                        obra de Dios.
-                        <br />
-                        10. Es artífice de su vida y constructor de un mundo
-                        mejor en su comunidad.
-                    </p>
+                    <ol className={style.text}>
+                        <li>
+                            Vive íntegramente su fe, siendo testigo de Cristo y
+                            miembro activo de su Iglesia.
+                        </li>
+                        <li>
+                            Quiere a su Patria; desea y busca la paz, por eso
+                            trabaja por la justicia.
+                        </li>
+                        <li>
+                            Ama y obedece pronta y alegremente a sus padres y
+                            superiores, se siente corresponsable con ellos.
+                        </li>
+                        <li>
+                            Está siempre listo para servir, colabora en toda
+                            iniciativa buena.
+                        </li>
+                        <li>
+                            Es amigo y hermano de todos, porque en ellos ve a
+                            Cristo.
+                        </li>
+                        <li>
+                            Es educado y limpio en sus pensamientos, palabras y
+                            acciones.
+                        </li>
+                        <li>
+                            Es noble, generoso y alegre, aún en las
+                            dificultades.
+                        </li>
+                        <li>
+                            Es leal, veraz y digno de confianza, no realiza nada
+                            a medias.
+                        </li>
+                        <li>
+                            Admira, respeta y perfecciona la naturaleza, por ser
+                            obra de Dios.
+                        </li>
+                        <li>
+                            Es artífice de su vida y constructor de un mundo
+                            mejor en su comunidad.
+                        </li>
+                    </ol>
 
                     <h2 className={style.titles}>Canción siempre listo:</h2>
                     <h1 className={style.text}>
